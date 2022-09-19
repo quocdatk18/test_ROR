@@ -1,0 +1,29 @@
+.authentica {
+  background: url(library.jpg) center fixed no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.sub_authentica {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 8px;
+    padding: 26px 20px 30px 20px;
+    opacity: 0.9;
+}
+
+.titles {
+  font-size: 20px;
+}
+
+.titles .span {
+  font-size: 16px;
+}
+
+.actions {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

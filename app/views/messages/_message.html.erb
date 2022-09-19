@@ -1,0 +1,13 @@
+<% if (current_user.id == message.user.id) %>
+  <div class='message darker'>
+    <img src='<%= message.user.avatar%>' alt='Avatar' style='width:100%;' class="right">
+    <p><%= message.content %></p>
+    <small class='time-right'>at <%= l message.created_at, format: :short %></small>
+  </div>
+<% else %>
+  <div class='message '>
+    <img src='<%= message.user.avatar%>' alt='Avatar' style='width:100%;'>
+    <p><%= message.content %></p>
+    <small class='time-left'>at <%= l message.created_at, format: :short %></small>
+  </div>
+<% end %>
